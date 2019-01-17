@@ -5,7 +5,5 @@ orbs:
 
 workflows:
     "Hello Workflow":
-            jobs:
-	              - hello/hello-build
-		      Commit and push the changes to trigger a build. If this is your first project on CircleCI, go to the Projects page, click the Add Projects button and then click the Build Project button next to your project.
-
+        jobs:
+          - hello/hello-build
