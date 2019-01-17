@@ -15,13 +15,9 @@ jobs:
 
 workflows:
   version: 2
-  untagged-build:
-    jobs:
-      - hello_world
-  tagged-build:
+  hello_then_test:
     jobs:
       - hello_world
       - test:
-          filters:
-            tags:
-              only: /^v.*/
+          requires:
+            - hello_world
