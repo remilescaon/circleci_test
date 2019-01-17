@@ -18,6 +18,6 @@ workflows:
     jobs:
       - hello_world
       - test
-        filters:
-          tags:
-            only: /^v.*/
+          filters:
+            tags:
+              only: /^v.*/
